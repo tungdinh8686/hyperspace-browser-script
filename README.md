@@ -21,7 +21,25 @@ Follow these steps to install and set up the Tampermonkey script for your browse
 
 ---
 
-## 3. Add the Script
+## 3. Add or Download the Script
+1. Download the script if you want [HyperSpace_AutoConnect]( or
+2. Copy the following script code:
+   
+```javascript
+   // ==UserScript==
+   // @name         Hyperspace Node Auto-Reconnect
+   // @match        https://node.hyper.space/*
+   // @grant        none
+   // ==/UserScript==
 
-1. Copy the following script code:
-   ```javascript
+   (function() {
+       'use strict';
+       setInterval(() => {
+           const toggleButton = document.querySelector('button[role="switch"]');
+           if (toggleButton && toggleButton.getAttribute('aria-checked') === 'false') {
+               toggleButton.click();
+               console.log('Node turned back on!');
+           }
+       }, 10000); // Every 5 minutes
+   })();
+
