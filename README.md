@@ -22,8 +22,8 @@ Follow these steps to install and set up the Tampermonkey script for your browse
 ---
 
 ## 3. Add or Download the Script
-1. Download the script if you want [HyperSpace_AutoConnect]( or
-2. Copy the following script code:
+1. Download the script if you want [HyperSpace_AutoConnect](https://github.com/tungdinh8686/hyperspace-browerser-script/blob/main/hyperspacebrowsernode.js)
+2. or just Copy the following script code:
    
 ```javascript
    // ==UserScript==
@@ -40,6 +40,13 @@ Follow these steps to install and set up the Tampermonkey script for your browse
                toggleButton.click();
                console.log('Node turned back on!');
            }
-       }, 10000); // Every 5 minutes
+       }, 60000); // Every 1 minutes
    })();
+```
+## 4. Enable the Script
+- Ensure the script is toggled on in the Tampermonkey dashboard.
 
+- Look for the switch next to the script name and make sure it's in the "on" position then F5 to refresh
+
+## 5. If this helpful you can send me a cup of coffe
+donation:0x3183757e70b1454528712729D42A3058CEb13941
