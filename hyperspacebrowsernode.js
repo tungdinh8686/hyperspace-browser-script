@@ -12,5 +12,5 @@
             toggleButton.click();
             console.log('Node turned back on!');
         }
-    }, 20000); // Every 10 minutes
+    }, 60000); // Every 1 minutes
 })();
