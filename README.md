@@ -10,7 +10,7 @@ Follow these steps to install and set up the Tampermonkey script for your browse
   - **[Chrome](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)**
   - **[Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)**
 - Click **"Add to Chrome"** or **"Add to Firefox"** and confirm the installation.
-
+- Turn on Developer Mode at chrome://extensions/
 ---
 
 ## 2. Create a New Script
